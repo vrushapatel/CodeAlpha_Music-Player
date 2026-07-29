@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>My Music Player</h1>
+    </header>
+
+    <main>
+        <div class="music-player">
+            
+            <!-- Now Playing Section -->
+            <div class="now-playing-container">
+                <div class="now-playing">
+                    <img src="./marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg" alt="Album Cover" id="album-cover">
+                    <div class="song-info">
+                        <h2 id="song-title">Song Title</h2>
+                        <p id="artist-name">Artist Name</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio Player Controls -->
+            <audio id="audio-player" controls></audio>
+
+            <div class="controls">
+                <button id="prev-btn">Previous</button>
+                <button id="play-btn">Play</button>
+                <button id="next-btn">Next</button>
+                
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+            </div>
+
+            <div class="bar">
+                <span id="progress-bar"></span>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist">
+                <h2>Your Playlist</h2>
+                <ul id="playlist-list">
+                    <!-- Playlist items will be added here -->
+                </ul>
+            </div>
+
+            <div class="animation-container">
+                <div class="animation-circle"></div>
+                <div class="animation-circle"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
